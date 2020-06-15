@@ -1,0 +1,62 @@
+#hero{
+    height: 100vh;
+    /* border: 1px solid red; */
+    background: url(../images/background.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    align-items: flex-end;
+}
+.img-overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+#hero .details-container{
+    margin-left: 5rem;
+    z-index: 1;
+    /* border: 1px solid red; */
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero .details-container > h1{
+   font-weight: 600;
+}
+.form-container input{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.next-btn{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border: 1px solid transparent;
+}
+.tour-locations{
+    /* border: 1px solid red; */
+    width: 70% !important;
+    height: 6rem;
+    border-radius: 8px;
+    /* margin: 0 15px !important; */
+}
+
+.location-slider{
+    max-height: 6rem;
+    /* border: 1px solid red; */
+}
+.location-image{
+    width: 100% !important;
+    height: inherit !important;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    #hero .details-container{
+        margin:0;
+        z-index: 1;
+    }
+}

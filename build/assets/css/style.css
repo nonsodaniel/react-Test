@@ -1,0 +1,29 @@
+:root {
+    --main-bg-color: #FF4C59;
+    --main-txt-color: #FF4C59;
+    --main-padding: 15px;
+  }
+
+  .bg-color{
+    background-color: var(--main-bg-color) ;
+  }
+  .text-color{
+    color: var(--main-txt-color) ;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+/*   
+  #div1 {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    padding: var(--main-padding);
+  }
+  
+  #div2 {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+    padding: var(--main-padding);
+  } */
