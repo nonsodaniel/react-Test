@@ -1,17 +1,30 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import Header from './index'
-const component = shallow(<Header />);
+import { findByTestAttr } from '../utils/index'
+
+const setup = (props = {}) => {
+    const component = shallow(<Header {...props} />);
+    return component;
+}
+
 
 describe('Header component', () => {
+
+    let _component;
+    beforeEach(() => {
+        _component = setup()//The component shallow renders before each test
+    })
+
     it('should render without errors', () => {
-        console.log(component.debug())
-        const wrapper = component.find('.headerComp');
+        //    const wrapper = component.find(`[data-test='headerComp']`);//data-test is used to avoid class confusion
+        const wrapper = findByTestAttr(_component, 'headerComp')
         expect(wrapper.length).toBe(1)
     })
 
     it('should render logo', () => {
-        const logo = component.find('.imgLogo');
+        // const logo = component.find(`[data-test='imgLogo']`);
+        const logo = findByTestAttr(_component, 'imgLogo')
         expect(logo.length).toBe(1)
     })
 })
