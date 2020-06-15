@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/header";
+import './app.scss'
 
 class App extends Component {
 
@@ -15,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button className="btn btn-danger">hell</button>
+        <Header />
       </div>
     );
   }
