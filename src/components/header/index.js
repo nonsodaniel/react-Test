@@ -3,10 +3,10 @@ import './styles.scss'
 
 const Header = (props) => {
     return (
-        <header>
+        <header className="headerComp">
             <div className="wrap">
                 <div className="logo">
-                    <img
+                    <img className="imgLogo"
                         src={`https://res.cloudinary.com/data-infosec-consult-limited/image/upload/v1591353533/Nonso_Daniel_5e7aaf1ba56b930016de0de3.jpg`}
                         alt="logo" />
                 </div>
